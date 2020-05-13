@@ -1,16 +1,12 @@
 def matrixrotation(arr, m, n, r, q):
     x = []
-    for i in range(q, m - q - 1):
-        x.append(arr[i][q])
+    for i in range(q, m - q - 1):  x.append(arr[i][q])
         
-    for i in range(q, n - q):
-        x.append(arr[m - q - 1][i])
+    for i in range(q, n - q):  x.append(arr[m - q - 1][i])
     
-    for i in range(m - q - 2, q, -1):
-        x.append(arr[i][n - q - 1])
+    for i in range(m - q - 2, q, -1):  x.append(arr[i][n - q - 1])
     
-    for i in range(n - q - 1, q, -1):
-        x.append(arr[q][i])
+    for i in range(n - q - 1, q, -1):  x.append(arr[q][i])
 
     cnst = len(x)
     r = cnst - (r % cnst)
