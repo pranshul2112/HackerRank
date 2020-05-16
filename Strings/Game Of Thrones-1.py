@@ -17,8 +17,5 @@ def gameofthrones(s):
         return "YES"
 
 
-
-
-
 s = input()
 print(gameofthrones(s))
