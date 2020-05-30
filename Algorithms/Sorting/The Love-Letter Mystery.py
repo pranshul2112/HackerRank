@@ -7,10 +7,9 @@ def mincost(string):
         y = ord(string[n - i - 1])
         
         if x == y:
-            continue
-            
-        else:
-            res += abs(x - y)
+            continue    
+      
+        res += abs(x - y)
             
     return res
 
