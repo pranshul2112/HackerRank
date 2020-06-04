@@ -1,5 +1,5 @@
 
-def solution(data, n):
+def solution(data):
     dic = {}
 
     for i in data:
@@ -11,8 +11,8 @@ def solution(data, n):
             else:
                 print(0, end=' ')
 
-    return None
+    return 
 
 n = int(input())
 data = list(map(int, input().split()))
-(solution(data, n))
+solution(data)
